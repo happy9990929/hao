@@ -10,7 +10,7 @@ $(function(){
     var windowHeight = $(window).height();
     $(window).bind('mousewheel',function(){
         //header fixed
-        if($('html,body').scrollTop() > $('#indexBg').height()){
+        if($(window).scrollTop() > $('#indexBg').height()){
             $('#header').addClass('header_top');
         } else{
             $('#header').removeClass('header_top');
