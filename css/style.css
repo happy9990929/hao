@@ -36,6 +36,10 @@ body {
     height: 3rem;
     position: relative;
 }
+.header_top {
+    position: fixed;
+    top: 0;
+}
 .headerLogo {
     height: 100%;
     display: block;

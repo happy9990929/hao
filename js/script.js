@@ -11,15 +11,9 @@ $(function(){
     $(window).bind('mousewheel',function(){
         //header fixed
         if($('html,body').scrollTop() > $('#indexBg').height()){
-            $('#header').css({
-                position: 'fixed',
-                top: 0,
-            });
+            $('#header').addClass('header_top');
         } else{
-            $('#header').css({
-                position: '',
-                top: '',
-            })
+            $('#header').removeClass('header_top');
         }
          //shrink header
         if(($(this).scrollTop() > $('#indexBg').height()) && $(this).width() > 1300){
