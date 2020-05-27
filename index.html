@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>郝創意</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css?200527">
+    <script src="./js/fontawesome5.13.0_all.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+</head>
+<body>
+    <section class="indexBg" id="indexBg">
+        <div class="eraserBox">
+            <img src="./images/logoLg.png" id="haoColor" class="haoColor img-fluid"/>
+            <img src="./images/logoLg2.png" id="redux" class="redux img-fluid"/>
+        </div>
+        <div class="scroll" onclick="linkto('about')">
+            <span class="mouse">
+                <span class="scrollWheel"></span>
+            </span>
+            <span>scroll</span>
+        </div>
+    </section>
+    <header class="header" id="header">
+        <a href="/" class="headerLogo">
+            <img src="./images/logo.png" class="headerLogo"/>
+        </a>
+        <div class="bar" id="bar">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="menu" id="menu">
+            <ul class="menuLinks">
+                <li class="menuLink" onclick="linkto('about')">關於郝創意</li>
+                <li class="menuLink" onclick="linkto('welfare')">郝人-環境福利</li>
+                <li class="menuLink" onclick="linkto('learning')">郝人-學習發展</li>
+                <li class="menuLink" onclick="linkto('game')">郝創意遊戲</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="about" id="about">
+        <div class="aboutInner">
+            <h1 class="h1 aboutH1">關於郝創意</h1>
+            <div class="aboutLine">
+                <div class="line"></div>
+                <div class="lineShow" id="lineShow"></div>
+                <div class="dot dot1 dotActive"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+                <div class="dot dot4"></div>
+                <div class="dot dot5"></div>
+            </div>
+            <div class="aboutBox aboutBox1" data-scroll-reveal="enter bottom, over .5s">
+                <div class="aboutImg">
+                    <img src="./images/about1.png" class="img-fluid"/>
+                    <img src="./images/about1_gem.png" class="gem" />
+                </div>
+                <h2 class="h2 aboutH2">郝創意 起源</h2>
+                <p class="aboutText">2019年誕生的郝創意，帶著源源不絕的瘋狂想法加入了線上游戲產業，要將最刺激華麗的遊戲帶入全球市場，讓全世界都能感受到來自台灣團隊設計的熱血遊戲。郝創意有10多年業界豐富經驗的遊戲企劃設計團隊，故遊戲一推出便受到喜愛，接下來會更積極的拓展新的市場及開發更多的遊戲品項。
+                </p>
+            </div>
+            <div class="aboutBox aboutBox2" data-scroll-reveal="enter bottom, over .5s">
+                <div class="aboutImg">
+                    <div class="about2animation"></div>
+                    <img src="./images/about2.png" class="aboutImgM img-fluid"/>
+                </div>
+                <h2 class="h2 aboutH2">郝創意 奮鬥史</h2>
+                <p class="aboutText">2019年 郝創意成立<br/>
+                    2020年多款遊戲推出，成功在中國、泰國、越南、印度等地方獲得大量玩家支持
+                </p>
+            </div>
+            <div class="aboutBox aboutBox3" data-scroll-reveal="enter bottom, over .5s">
+                <div class="aboutImg">
+                    <div class="about3animation"></div>
+                    <img src="./images/about3.png" class="aboutImgM img-fluid"/>
+                </div>
+                <h2 class="h2 aboutH2">郝創意 核心價值</h2>
+                <p class="aboutText">『創意不設限』是郝創意的核心理念，對於遊戲、人才都抱持這樣的態度，不預設框架所有員工都能一起參與遊戲開發討論，在這裡，天馬行空可以被接受，在這裡，實驗技術是可以被支持及協助，只有不設限的創意，才能在同質性相對高的遊戲市場中做出差異化，脫穎而出。<br/>
+                    在人才選擇上亦是如此，郝創意喜歡敢於冒險嘗試的伙伴，不論是社會新鮮人或是不同產業的資深人員，只要你有能力也有創意都是郝創意想要一起共事的伙伴，一個你能勇敢說話的創意遊戲團隊。                     
+                </p>
+            </div>
+            <div class="aboutBox aboutBox4" data-scroll-reveal="enter bottom, over .5s">
+                <div class="aboutImg">
+                    <div class="about4animation"></div>
+                    <img src="./images/about4.png" class="aboutImgM img-fluid"/>
+                </div>
+                <h2 class="h2 aboutH2">成為『郝人』</h2>
+                <p class="aboutText">郝創意認為未來很多東西都能被機器取代，但唯有『人的創意』是無法被取代的，因此對於人才格外的重視，不論是福利環境、學習發展以及休閒娛樂等，郝創意都全力支援。
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="welfare" id="welfare">
+        <div class="mascot" data-scroll-reveal="enter bottom, over .3s">
+            <div class="monster"></div>
+        </div>
+        <div class="welfareContent">
+            <h1 class="h1 welfareH1">郝人-環境福利</h1>
+            <div class="logoWhite" data-scroll-reveal="enter bottom, over .5s">
+                <img src="./images/logo_white.png" class="img-fluid"/>
+            </div>
+            <div class="welfareBoxs">
+                <div class="welfareBox" data-scroll-reveal="enter bottom, over .5s">
+                    <div class="welfareIconBox">
+                        <div class="welfareIcon">
+                            <img src="./images/welfare1.png" class="img-fluid"/>
+                        </div>
+                        <h2 class="h2 welfareH2">勞健保及獎金</h2>
+                    </div>
+                    <p class="welfareText">
+                        <span class="square"></span>健全的勞健保及勞退提撥<br/>
+                        <span class="square"></span>三節禮金<br/>
+                        <span class="square"></span>年終獎金<br/>
+                        <span class="square"></span>生日禮金<br/>
+                        <span class="square"></span>專案獎金<br/>
+                        <span class="square"></span>研發獎金<br/>
+                        <span class="square"></span>婚喪喜慶津貼
+                    </p>
+                </div>  
+                <div class="welfareBox" data-scroll-reveal="enter bottom, over .5s">
+                    <div class="welfareIconBox">
+                        <div class="welfareIcon">
+                            <img src="./images/welfare2.png" class="img-fluid"/>
+                        </div>
+                        <h2 class="h2 welfareH2">工作環境</h2>
+                    </div>
+                    <p class="welfareText">
+                        <span class="square"></span>頂級商辦，空間明亮舒適<br/>
+                        <span class="square"></span>開放式設計營造溫馨辦公環境<br/>
+                        <span class="square"></span>零食、飲料、泡麵 無限制供應<br/>
+                        <span class="square"></span>輕奢華全自動義式咖啡機<br/>
+                        <span class="square"></span>3M淨水器、微波爐、冰箱<br/>
+                        <span class="square"></span>各式桌遊及飛鏢、投籃遊戲
+                    </p>
+                </div>
+                <div class="welfareBox" data-scroll-reveal="enter bottom, over .5s">
+                    <div class="welfareIconBox">
+                        <div class="welfareIcon">
+                            <img src="./images/welfare3.png" class="img-fluid"/>
+                        </div>
+                        <h2 class="h2 welfareH2">額外福利</h2>
+                    </div>
+                    <p class="welfareText">
+                        <span class="square"></span>每週固定下午茶日<br/>
+                        <span class="square"></span>定期舉辦跨部門員工聚餐<br/>
+                        <span class="square"></span>不定期舉辦各類內部活動<br/>
+                        <span class="square"></span>不定期舉辦國內/外員工旅遊
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="learning" id="learning">
+        <div class="learningText" data-scroll-reveal="enter bottom, over .5s">
+            <h1 class="h1 learnH1">郝人-學習發展</h1>
+            <p>
+                作為郝人，每位員工都有自己獨特的學習發展計畫，人資單位會為每位員工制訂合適的發展課程，協助員工自我成長及提升專業能力，透過多元學習管道及豐富的資源，使每位郝人都能隨時充實自己。<br/>
+                郝創意提供完整的新人職前訓練課程，中/高階管理課程以及專業精進課程，讓同仁能隨著職務成長變更學習更多必備知識。
+            </p>
+        </div>
+    </section>
+    <section class="game" id="game">
+        <h1 class="h1 gameH1">郝創意遊戲</h1>
+        <div>
+            <div class="gameScroll gameScrollTop">
+
+            </div>
+            <div class="gameScroll gameScrollBottom">
+
+            </div>
+        </div>
+        <p class="gameText" data-scroll-reveal="enter bottom, move 50px, over .5s">
+            這裡 我們能實現不可能<br/>
+            郝創意遊戲製作團隊，擁有業界資深的遊戲企劃，及腦洞大開的設計及技術團隊，將所有大家認為不可能的遊戲實現，
+            對於遊戲設計理念，不受框架限制，對創新及新穎市場的需求敢勇於嘗試，才能在百花齊放的遊戲中脫穎而出。
+        </p>
+    </section>
+    <footer class="footer">
+        © 2020 郝創意 Hao Creative Co.,Ltd Reserved
+    </footer>
+    <script src='./js/jquery.eraser.js'></script>
+    <script src="./js/scrollReveal.js"></script>
+    <script>
+        (function () {
+            if($(window).width() > 768){
+                window.scrollReveal = new scrollReveal({ reset: true, move: '150px' });
+            }
+        })();
+    </script>
+    <script src="./js/script.js?200527"></script>
+</body>
+</html>
