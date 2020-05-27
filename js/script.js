@@ -8,7 +8,7 @@ $(function(){
 //滾動時，header fixed，關於郝創意線條長度
 $(function(){
     var windowHeight = $(window).height();
-    $(window).bind('mousewheel',function(){
+    $(window).on('scroll',function(){
         //header fixed
         if($(window).scrollTop() > $('#indexBg').height()){
             $('#header').addClass('header_top');
